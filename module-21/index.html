@@ -27,12 +27,9 @@
 </head>
 
 <body>
-    <!-- JS Connection -->
-    <script src="./tea-house.js"></script>
-
     <!-- Banner Section -->
-    <section class="container items-center grid grid-cols-2 border border-red-500 mx-auto">
-        <div class="banner-left space-y-[30px] bg-amber-300">
+    <section class="container grid grid-cols-1 md:grid-cols-2 mx-auto">
+        <div class="banner-left space-y-[30px]">
             <h2 class="font-bold text-[80px]">
                 It's good <br> tea time at The <br> Tea House
             </h2>
@@ -41,18 +38,31 @@
                 Buds.
             </p>
             <button
-                class="py-3 px-5 rounded-md text-white font-semibold bg-red-400 bg-linear-to-bl from-[#ff8938] to-[#ff0000]">Explore
+                class="py-3 px-5 rounded-md text-white font-semibold bg-linear-to-bl from-[#ff8938] to-[#ff0000]">Explore
                 More<span class="-rotate-45 inline-block"><i class="fa-solid fa-arrow-right-long"></i></span></button>
         </div>
-        <div class="banner-right bg-pink-700">
+        <div class="banner-right relative flex justify-end">
             <img src="./images/banner.png" alt="">
-            <div>
-                <h2>5.00</h2>
-                <p>Trust Rating</p>
+
+            <!-- Rating div -->
+            <div class="absolute bottom-5 left-5 bg-white rounded-xl shadow-2xl flex items-center gap-2 px-4 py-2">
+                <img src="./images/Group 5.png" alt="">
+                <div>
+                    <h2 class="font-bold">5.00</h2>
+                    <p class="text-sm text-gray-500">Trust Rating</p>
+                </div>
             </div>
         </div>
+
+    </section>
+    <!-- Features Section  -->
+    <section>
+        
     </section>
 
+
+    <!-- Js Conneection -->
+    <script src="./tea-house.js"></script>
 </body>
 
 </html>
